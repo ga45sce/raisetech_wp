@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+.l-header {
+    display: flex;
+    justify-content: space-between;
+    height: 217px;
+    background-image:linear-gradient(#f2ede9,#ded8d3);  
+}
+
+.l-header-menu {
+    color: #707070;
+    list-style: none;
+}

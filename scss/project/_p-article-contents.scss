@@ -1,0 +1,46 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-article-contents__wrap {
+    padding: 5%;
+    background-color: #FFFDFA;
+    @include mixin.media-queries(more-md) {
+        display: grid;
+        grid-template-columns:45% 45%;
+        column-gap: 5%;
+        justify-content: center;
+    }
+}
+.p-article-contents {
+    display: grid;
+    width: 100%;
+    min-height: 642px;
+    align-content: space-between;
+    @include mixin.media-queries(more-md) {
+        min-height: 681px;
+    }
+    @include mixin.media-queries(more-lg) {
+        min-height: 1193px;
+    }
+    &__image {
+        object-fit: cover;
+        min-width: 335px;
+        min-height: 642px;
+        @include mixin.media-queries( more-md ) {
+            min-width: 357px;
+            min-height: 681px;
+        }
+        @include mixin.media-queries(more-lg) {
+            min-width: 625px;
+            min-height: 1193px;
+        }
+    }
+    &__img_take_out {
+        background-image: url("../img/phone_take_out.jpg");
+        background-size: cover;
+    }
+    &__img_eat_in {
+        background-image: url("../img/phone_eat_in.jpg");
+        background-size: cover;
+    }
+}

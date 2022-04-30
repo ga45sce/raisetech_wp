@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-burger-grid {
+    display: grid;
+    grid-row-gap: 20px;
+    &__wrap {
+        @include mixin.media-queries(more-md) {
+            grid-template-columns: 50% 50%;
+            grid-gap: 20px 15px;
+        }
+        @include mixin.media-queries(more-lg) {
+            grid-template-columns: 33% 33% 33%;
+            grid-gap: 20px 20px;
+        }
+    }
+    &__image {
+        height: auto;
+        width: 100%;
+        //min-width: 349px;
+        object-fit: cover;
+        //background-image: url("../img/burger3.jpg");
+        @include mixin.media-queries(more-md) {
+           //background-image: url("../img/burger3.jpg");
+        }
+        @include mixin.media-queries(more-lg) {
+            //background-image: url("../img/burger3.jpg");
+        }
+    }
+    &__area {
+        padding: 20px 20px 0px 20px;
+        @include mixin.media-queries(more-md) {
+            padding: 20px 100px 0px 100px;
+        }
+    }
+}

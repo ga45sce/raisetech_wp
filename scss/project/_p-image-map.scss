@@ -1,0 +1,42 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-image-map {
+    object-fit: cover;
+    width: 375px;
+    height: 691px;
+    position: absolute;
+    z-index: -1;
+    &__title {
+        color: #fff;
+        font-size: 30px;
+        font-weight: bold;
+        @include mixin.media-queries(more-lg) {
+            font-size: 36px;
+        }
+        &::after{
+            content: '';
+            width: 40px;
+            height: 3px;
+            top: 0;
+            left: 0;
+            bottom:0;
+            margin: 10px 0px 10px 0px;
+            display: block;
+            background-color: #fff;
+            @include mixin.media-queries(more-lg) {
+                margin: 40px 0px 40px 0px;
+            }
+        }
+    }
+    &__text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: bold;
+        @include mixin.media-queries(more-lg) {
+            font-size: 16px;
+        }
+    }
+}
+
+

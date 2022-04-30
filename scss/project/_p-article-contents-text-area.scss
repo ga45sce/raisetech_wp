@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-article-contents-text-area {
+    margin: 0px 10px 10px 10px;
+    @include mixin.media-queries(more-lg) {
+        margin: 0px 20px 20px 20px;
+   }
+}

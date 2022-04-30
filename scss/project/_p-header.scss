@@ -1,0 +1,76 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-header {
+    &__area1 {
+        width: 100%;
+        text-align: center;
+        @include mixin.media-queries(more-lg) {
+            text-align:left;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    &__title {
+        padding-top: 40px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #707070;
+        @include mixin.media-queries(more-lg) {
+            font-size: 64px;
+            padding-top: 65px;
+            padding-left: 67px;
+        }
+    }
+    &__search {
+        padding-top: 38px;
+        display: flex;
+        justify-content: center;
+        @include mixin.media-queries(more-lg) {
+            padding-top: 86px;
+        }
+    }
+    &__search2::before,
+    &__search2::after {
+        position: absolute;
+        content: '';
+        border-color: #707070;
+    }
+    &__search2::before {
+        width: 15px;
+        height: 15px;
+        top: 139px;
+        //left: 0;
+        border: 1px solid;
+        border-radius: 50%;
+        //box-shadow: 0 0 0 2px #fff;
+        margin-left: 10px;
+        @include mixin.media-queries(more-lg) {
+            top: 100px;
+        }
+
+    }
+    &__search2::after {
+        width: 8px;
+        height: 6px;
+        top: 154px;
+        //left: 45px;
+        border-top: solid 2px;
+        transform: rotate(45deg);
+        margin-left: 20px;
+        @include mixin.media-queries(more-lg) {
+            top: 114px;
+        }
+    }
+    &__area2 {
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        @include mixin.media-queries(more-lg) {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    
+}

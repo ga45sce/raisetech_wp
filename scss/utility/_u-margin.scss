@@ -1,0 +1,23 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.u-margin {
+    &__button {
+        margin-left: 12px;
+        @include mixin.media-queries(more-lg) {
+            margin-right: 20px;
+        }
+    }
+    &__article-contents {
+        margin-top: 20px;
+        @include mixin.media-queries(more-md) {
+            margin-top: 0px;
+        }
+    }
+    &__article-contents-text {
+        margin-bottom: 10px;
+        @include mixin.media-queries(more-lg) {
+            margin-bottom: 20px;
+        }
+    }
+}

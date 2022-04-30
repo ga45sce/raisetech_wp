@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+// キーを「@includeで指定する引数」、値を「min-widthのサイズ」として、Map（連想配列）を作成
+$break-point: (
+  //more-sm: 375px,
+  more-md: 600px,
+  //more-lg: 1025px
+  more-lg: 1240px
+);
+
+// メディアクエリを@mixinで定義
+@mixin media-queries( $key ) {
+  @media ( min-width: map-get( $break-point, $key )) {
+    @content;
+  }
+}
+
+// それぞれの画面サイズで、それぞれのサイト横幅（width）を指定するメディアクエリを@mixinで定義
+@mixin responsive-width{
+  @include media-queries( more-sm ) {
+    width: 750px;
+  }
+  @include media-queries( more-md )  {
+    width: 970px;
+  }
+  @include media-queries( more-lg )  {
+    width: 1100px;
+  }
+}

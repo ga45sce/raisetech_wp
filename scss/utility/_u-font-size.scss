@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.u-font-size {
+    &__top {
+        font-size: 16px;
+    }
+}

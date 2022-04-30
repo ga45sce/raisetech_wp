@@ -1,0 +1,9 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.l-wrapper {
+    @include mixin.media-queries(more-lg) {
+        display: grid;
+        grid-template-columns: 81% 19%;
+    }
+}

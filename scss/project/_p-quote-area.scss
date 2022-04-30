@@ -1,0 +1,21 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-quote-area {
+   background-color: #F5F5F5;
+   color: #3C2A10;
+   font-size: 16px;
+   padding: 30px 20px;
+   margin: 30px 20px 0px 20px;
+    @include mixin.media-queries(more-md) {
+        padding: 50px;
+        margin: 60px 60px 0px 60px;
+    }
+   @include mixin.media-queries(more-lg) {
+        padding: 50px;
+        margin: 100px 100px 0px 100px;
+   }
+   a {
+    text-decoration: underline;
+   }
+}

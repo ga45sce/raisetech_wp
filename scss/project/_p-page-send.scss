@@ -1,0 +1,33 @@
+@charset "UTF-8";
+@use '../foundation/mixin';
+
+.p-page-send {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px 30px 20px;
+    background-color: #FFFDFA;
+    @include mixin.media-queries(more-md) {
+        justify-content: center;
+        align-items: center;
+    }
+    @include mixin.media-queries(more-lg) {
+        padding: 60px 100px 30px 100px;
+    }
+    a{
+        color: #707070;
+    }
+    &__text{
+        padding: 1px 7px;
+        margin: 7.5px;
+    }
+    &__textbox{
+        border: solid;
+        border-width: thin;
+        padding: 1px 7px;
+        margin: 7.5px;
+    }
+    &__textbox-wrap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

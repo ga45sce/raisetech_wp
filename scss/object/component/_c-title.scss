@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@use '../../foundation/mixin';
+
+.c-title-main {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 41px;
+    font-weight: bold;
+    padding-top: 11px;
+    padding-left: 10px;
+    //position: absolute;
+    top: 0;
+    left: 0;
+    @include mixin.media-queries(more-md) {
+        &::after{
+            content: '';
+            width: 40px;
+            height: 3px;
+            top: 0;
+            left: 0;
+            bottom:0;
+            margin-top: 20px;
+            display: block;
+            background-color: #fff;
+        }
+    }
+    @include mixin.media-queries(more-lg) {
+        font-size: 80px;
+        padding-top: 20spx;
+        padding-left: 19px;
+    }
+}
+.c-title-main-under {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    font-size: 41px;
+    font-weight: bold;
+    padding-top: 11px;
+    padding-left: 10px;
+    //position: absolute;
+    top: 0;
+    left: 0;
+    &::after{
+        content: '';
+        width: 40px;
+        height: 3px;
+        top: 0;
+        left: 0;
+        bottom:0;
+        margin-top: 20px;
+        display: block;
+        background-color: #fff;
+    }
+    @include mixin.media-queries(more-lg) {
+        font-size: 80px;
+        padding-top: 20spx;
+        padding-left: 19px;
+    }
+}
+.c-title-sub {
+    color: #3C2A10;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 20px 10px 0px 20px;
+    @include mixin.media-queries(more-md) {
+        font-size: 24px;
+    }
+}

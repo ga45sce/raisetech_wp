@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+.l-footer {
+    position: relative;
+    width: 100%;
+    height: 150px;
+}
+.l-footer-image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+.l-footer-area {
+    position: absolute;
+    top: 39px;
+    left: 0;
+    //transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.l-footer-area2 {
+    position: absolute;
+    color: #fff;
+    top: 101px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    small {
+        font-size: 14px;
+    }
+}
+.l-footer-area-anker {
+    color: #fff;
+    font-size: 20px;
+}
