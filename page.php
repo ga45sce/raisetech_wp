@@ -1,39 +1,5 @@
-<!DOCTYPE html>
-<html lang="Ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hamburger</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link href="css/style.css" rel="stylesheet"></link>
-    </head>
-    <body>
-    <div class="l-wrapper">
-        <div>
-            <header class="l-header">
-                <div class="p-header__area1">
-                    <p class="p-header__title">Hamburger</p1>
-                    <div class="p-header__search">
-                        <div class="p-header__search2"></div>
-                        <form>
-                            <input type="text" class="c-input__search">
-                            <button class="c-button u-margin__button">
-                                検索
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="p-header__area2">
-                    <div>
-                        <button class="c-button-menu js-menu">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </header>
+<?php get_header(); ?>
+
             <article>
                 <div class="p-article-top p-article-top__page">
                     <div class="p-article-top__area">
