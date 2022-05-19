@@ -10,7 +10,7 @@
                 <?php wp_nav_menu( array( 'cateogrymenu' => 'cateogrymenu' ) ); ?>
                 
                 <!--エラー消すためだけにある -->
-                <?php dynamic_sidebar(); ?>
+                <?php //dynamic_sidebar(); ?>
 
                 <!--<ul class="p-gmenu__menu-title">
                     <li><a href="#" class="c-anker-menu">バーガー</a></li>

@@ -1,17 +1,30 @@
 <?php get_header(); ?>
 
+<?php
+    //カテゴリーアーカイブページでカテゴリーIDを取得
+    $cat_id = get_query_var('cat');
+    //カテゴリーアーカイブページでカテゴリースラッグを取得
+    $cat_slug = get_query_var('category_name');
+    //先ほど取得したカテゴリーIDをget_category()に渡す
+    $cat = get_category($cat_id);
+    //カテゴリーアーカイブページのカテゴリー名
+    $cat_names = $cat->cat_name;
+    //カテゴリ説明文表示
+    $cat_description = $cat->category_description; 
+?>
+
             <article>
                 <div class="p-article-top p-article-top__archive p-article-top__archive_area">
                         <div class="p-article-top__area p-article-top__area_archive">
                             <p class="p-article-top__title">Menu:</p>
-                            <p class="p-article-top__subtitle">チーズバーガー</p>
+                            <p class="p-article-top__subtitle"><?php echo $cat_names ?></p>
                         </div>
                         <div class="p-article-top__archive_backcolor"></div>
                 </div>
                 <div class="p-archive-top">
-                    <h2 class="p-archive-top__subtitle">小見出しが入ります</h2>
+                    <h2 class="p-archive-top__subtitle"><?php echo $cat_names ?>のメニュー一覧です。</h2>
                     <div class="p-archive-top__text">
-                        <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                        <p><?php echo $cat_description ?></p>
                     </div>
                 </div>
                 <?php
@@ -29,7 +42,7 @@
                                         <?php the_content(); ?>
                                     </div>
                                     <div class="p-archive-contents__button-area">
-                                        <a href="http://hamburger.local/<?php echo $slug; ?>">
+                                        <a href="<?php echo esc_url( home_url( '/' ) . $slug); ?>">
                                             <button class="p-archive-contents__button">
                                                 詳しく見る
                                             </button>
