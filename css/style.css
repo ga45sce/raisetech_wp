@@ -116,7 +116,7 @@ li {
   content: "";
   width: 40px;
   height: 7px;
-  top: 30px;
+  top: 70px;
   right: 0px;
   background-color: #707070;
   position: absolute;
@@ -252,6 +252,9 @@ li {
     padding-left: 67px;
   }
 }
+.p-header__title a {
+  color: inherit;
+}
 .p-header__search {
   padding-top: 38px;
   display: flex;
@@ -270,27 +273,47 @@ li {
 .p-header__search2::before {
   width: 15px;
   height: 15px;
-  top: 139px;
+  top: 186px;
   border: 1px solid;
   border-radius: 50%;
   margin-left: 10px;
 }
+@media (min-width: 601px) {
+  .p-header__search2::before {
+    top: 185px;
+  }
+}
+@media (min-width: 783px) {
+  .p-header__search2::before {
+    top: 173px;
+  }
+}
 @media (min-width: 1240px) {
   .p-header__search2::before {
-    top: 100px;
+    top: 133px;
   }
 }
 .p-header__search2::after {
   width: 8px;
   height: 6px;
-  top: 154px;
+  top: 200px;
   border-top: solid 2px;
   transform: rotate(45deg);
   margin-left: 20px;
 }
+@media (min-width: 601px) {
+  .p-header__search2::after {
+    top: 200px;
+  }
+}
+@media (min-width: 783px) {
+  .p-header__search2::after {
+    top: 186px;
+  }
+}
 @media (min-width: 1240px) {
   .p-header__search2::after {
-    top: 114px;
+    top: 147px;
   }
 }
 .p-header__area2 {
@@ -608,6 +631,22 @@ li {
     margin-left: 25%;
   }
 }
+.p-gmenu__menu-title a {
+  color: #707070;
+}
+.p-gmenu__menu-title .sub-menu {
+  font-size: 20px;
+  margin-top: 50px;
+}
+.p-gmenu__menu-title .sub-menu li {
+  margin-left: 40px;
+  margin-bottom: 23px;
+}
+@media (min-width: 1240px) {
+  .p-gmenu__menu-title .sub-menu li {
+    margin-left: 12%;
+  }
+}
 .p-gmenu__menu-subtitle {
   font-size: 20px;
   margin-top: 50px;
@@ -742,6 +781,19 @@ li {
 }
 .p-archive-contents__text-area--2 {
   min-height: 150px;
+  font-size: 16px;
+  padding: 19px 35px 0px 17px;
+  max-height: 300px;
+  overflow: hidden;
+}
+@media (min-width: 600px) {
+  .p-archive-contents__text-area--2 {
+    padding-left: 35px;
+  }
+}
+.p-archive-contents__text-area--2 h2 {
+  font-size: 16px;
+  padding-bottom: 19px;
 }
 .p-archive-contents__text-title {
   font-size: 20px;
@@ -832,6 +884,21 @@ li {
 .p-page-send__textbox-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+span.pages,
+a.previouspostslink,
+a.nextpostslink {
+  border: 0px;
+}
+
+span.pages, a.page, span.current, span.extend {
+  display: none;
+}
+@media (min-width: 600px) {
+  span.pages, a.page, span.current, span.extend {
+    display: inline;
+  }
 }
 
 .p-quote-area {

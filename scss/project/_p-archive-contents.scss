@@ -27,6 +27,17 @@
     }
     &__text-area--2 {
         min-height: 150px;
+        font-size: 16px;
+        padding: 19px 35px 0px 17px;
+        max-height: 300px;
+        overflow: hidden;
+        @include mixin.media-queries(more-md) {
+            padding-left: 35px;
+        }
+        h2 {
+            font-size: 16px;
+            padding-bottom: 19px;
+        }
     }
     &__text-title {
         font-size: 20px;

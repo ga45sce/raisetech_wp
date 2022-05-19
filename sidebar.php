@@ -1,13 +1,18 @@
         <aside>
-            <?//php wp_nav_menu(); ?>
-
+            
             <div class="p-gmenu__backcolor"></div>
             <nav class="p-gmenu">
                 <button class="c-button-menu js-menu">
                     <span></span>
                 </button>
                 <p class="p-gmenu__icon"></p>
-                <ul class="p-gmenu__menu-title">
+                <div class="p-gmenu__menu-title"> 
+                <?php wp_nav_menu( array( 'cateogrymenu' => 'cateogrymenu' ) ); ?>
+                
+                <!--エラー消すためだけにある -->
+                <?php dynamic_sidebar(); ?>
+
+                <!--<ul class="p-gmenu__menu-title">
                     <li><a href="#" class="c-anker-menu">バーガー</a></li>
                     <ul class="p-gmenu__menu-subtitle">
                         <li><a href="#" class="c-anker-menu">ハンバーガー</a></li>
@@ -34,6 +39,7 @@
                         <li><a href="#" class="c-anker-menu">紅茶（Ice/Hot）</a></li>
                         <li><a href="#" class="c-anker-menu">コーヒー（Ice/Hot）</a></li>
                     </ul>
-                </ul>
+                </ul>-->
+                </div>
             </nav>
         </aside>

@@ -5,10 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico">
+        <!--<link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/img/favicon.ico' ); ?>">-->
         <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
+
+    <?php wp_body_open(); ?>
+
     <div class="l-wrapper">
         <div>
             <header class="l-header">

@@ -6,38 +6,34 @@
                     <p class="p-article-top__title">ダミーサイト</p>
                 </div>
                 <div class="p-article-contents__wrap">
-                    <a href="<?php echo get_page_link(15);?>">
-                        <div class="p-article-contents p-article-contents__img_take_out">
-                            <!--<img src="./img/phone_take_out.jpg" alt="テイクアウト画像" class="p-article-contents__image">-->
-                            <p class="c-title-main">Take Out</p>
-                            <div class="p-article-contents-text-area">
-                                <div class="p-article-contents-text u-margin__article-contents-text">
-                                    <p class="c-title-sub">Take OUT</p>
-                                    <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
-                                </div>
-                                <div class="p-article-contents-text">
-                                    <p class="c-title-sub">Take OUT</p>
-                                    <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
-                                </div>
+                    <div class="p-article-contents p-article-contents__img_take_out">
+                        <!--<img src="./img/phone_take_out.jpg" alt="テイクアウト画像" class="p-article-contents__image">-->
+                        <p class="c-title-main">Take Out</p>
+                        <div class="p-article-contents-text-area">
+                            <div class="p-article-contents-text u-margin__article-contents-text">
+                                <p class="c-title-sub">Take OUT</p>
+                                <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                            </div>
+                            <div class="p-article-contents-text">
+                                <p class="c-title-sub">Take OUT</p>
+                                <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
                             </div>
                         </div>
-                    </a>
-                    <a href="<?php echo get_template_directory_uri(); ?>/archive.php">
-                        <div class="p-article-contents p-article-contents__img_eat_in u-margin__article-contents">
-                            <!--<img src="./img/phone_eat_in.jpg" alt="イートイン画像" class="p-article-contents__image">-->
-                            <p class="c-title-main-under">Eat In</p>
-                            <div class="p-article-contents-text-area">
-                                <div class="p-article-contents-text u-margin__article-contents-text">
-                                    <p class="c-title-sub">Take OUT</p>
-                                    <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
-                                </div>
-                                <div class="p-article-contents-text">
-                                    <p class="c-title-sub">Take OUT</p>
-                                    <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
-                                </div>
+                    </div>
+                    <div class="p-article-contents p-article-contents__img_eat_in u-margin__article-contents">
+                        <!--<img src="./img/phone_eat_in.jpg" alt="イートイン画像" class="p-article-contents__image">-->
+                        <p class="c-title-main-under">Eat In</p>
+                        <div class="p-article-contents-text-area">
+                            <div class="p-article-contents-text u-margin__article-contents-text">
+                                <p class="c-title-sub">Take OUT</p>
+                                <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
+                            </div>
+                            <div class="p-article-contents-text">
+                                <p class="c-title-sub">Take OUT</p>
+                                <p class="c-text-sub">当店のテイクアウトで利用できる商品を掲載しています</p>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="p-article-map">
                     <!--<img src="./img/phone_map.jpg" alt="マップ画像" class="p-image-map">-->

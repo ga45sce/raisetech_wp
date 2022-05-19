@@ -1,45 +1,11 @@
-<!DOCTYPE html>
-<html lang="Ja">
-    <head>
-        <meta charset="UTF-8">
-        <title>Hamburger</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Roboto&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link href="css/style.css" rel="stylesheet"></link>
-    </head>
-    <body>
-    <div class="l-wrapper">
-        <div>
-            <header class="l-header">
-                <div class="p-header__area1">
-                    <p class="p-header__title">Hamburger</p1>
-                    <div class="p-header__search">
-                        <div class="p-header__search2"></div>
-                        <form>
-                            <input type="text" class="c-input__search">
-                            <button class="c-button u-margin__button">
-                                検索
-                            </button>
-                        </form>
-                    </div>
-                </div>
-                <div class="p-header__area2">
-                    <div>
-                        <button class="c-button-menu js-menu">
-                            <span></span>
-                        </button>
-                    </div>
-                </div>
-            </header>
+<?php get_header(); ?>
             <article>
                 <div class="p-article-top p-article-top__single">
                     <div class="p-article-top__area">
-                        <h1 class="p-article-top__title">h1 チーズバーガー</h1>
+                        <h1 class="p-article-top__title"><?php the_title(); ?></h1>
                     </div>
                 </div>
+
                 <div class="p-single-top">
                     <h2 class="p-single-top__subtitle">見出しh2</h2>
                     <div class="p-single-top__text">
@@ -57,11 +23,11 @@
                 </div>
 
                 <div class="p-image-burger">
-                    <img src="./img/burger2.jpg" alt="ハンバーガー画像" class="p-image-burger__image">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger2.jpg' ); ?>" alt="ハンバーガー画像" class="p-image-burger__image">
                 </div>
                     
                 <div class="p-buger-contents">
-                    <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
                     <div class="p-buger-contents__text-area">
                         <div class="p-buger-contents__text-area--2">
                             <p class="p-buger-contents__text"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
@@ -75,23 +41,23 @@
                             <p class="p-buger-contents__text--left"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
                         </div>
                     </div>
-                    <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
                 </div>
 
                 <div class="p-image-burger__under">
-                    <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-image-burger__under__image">
+                    <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-image-burger__under__image">
                 </div>
                 <div class="p-burger-grid__area">
                     <div class="p-burger-grid p-burger-grid__wrap">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
-                        <img src="./img/burger3.jpg" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
+                        <img src="<?php echo esc_url(get_template_directory_uri() . '/img/burger3.jpg' ); ?>" alt="ハンバーガー画像" class="p-burger-grid__image">
                     </div>
                 </div>
 
@@ -183,84 +149,10 @@
                     <br>
                 </div>
             </article>
-            <div class="p-page-send p-page-send_phone__is-close">
-                <div>
-                    <a href="#">&lt;&lt;</a>
-                    <a href="#">前へ</a>
-                </div>
-                <div>
-                    <a href="#">次へ</a>
-                    <a href="#">&gt;&gt;</a>
-                </div>
             </div>
-            <div class="p-page-send p-page-send_tablet__is-close">
-                <p>page 1/10</p>
-                <div class="p-page-send__textbox-wrap">
-                    <div class="p-page-send__text"><a href="#">&lt;&lt;</a></div>
-                    <div class="p-page-send__textbox"><a href="#">1</a></div>
-                    <div class="p-page-send__textbox"><a href="#">2</a></div>
-                    <div class="p-page-send__textbox"><a href="#">3</a></div>
-                    <div class="p-page-send__textbox"><a href="#">4</a></div>
-                    <div class="p-page-send__textbox"><a href="#">5</a></div>
-                    <div class="p-page-send__textbox"><a href="#">6</a></div>
-                    <div class="p-page-send__textbox"><a href="#">7</a></div>
-                    <div class="p-page-send__textbox"><a href="#">8</a></div>
-                    <div class="p-page-send__textbox"><a href="#">9</a></div>
-                    <div class="p-page-send__text"><a href="#">&gt;&gt;</a></div>
-                </div>
-            </div>
-        </div>
-        <aside>
-            <button class="c-button-menu js-menu">
-                <span></span>
-            </button>
-            <div class="p-gmenu__backcolor"></div>
-            <nav class="p-gmenu">
-                <p class="p-gmenu__icon"></p>
-                <ul class="p-gmenu__menu-title">
-                    <li><a href="#" class="c-anker-menu">バーガー</a></li>
-                    <ul class="p-gmenu__menu-subtitle">
-                        <li><a href="#" class="c-anker-menu">ハンバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">チーズバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">テリヤキバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">アボカドバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">フィッシュバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">ベーコンバーガー</a></li>
-                        <li><a href="#" class="c-anker-menu">チキンバーガー</a></li>
-                    </ul>
-                    <li><a href="#" class="c-anker-menu">サイド</a></li>
-                    <ul class="p-gmenu__menu-subtitle">
-                        <li><a href="#" class="c-anker-menu">ポテト</a></li>
-                        <li><a href="#" class="c-anker-menu">サラダ</a></li>
-                        <li><a href="#" class="c-anker-menu">ナゲット</a></li>
-                        <li><a href="#" class="c-anker-menu">コーン</a></li>
-                    </ul>
-                    <li><a href="#" class="c-anker-menu">ドリンク</a></li>
-                    <ul class="p-gmenu__menu-subtitle">
-                        <li><a href="#" class="c-anker-menu">コーラ</a></li>
-                        <li><a href="#" class="c-anker-menu">ファンタ</a></li>
-                        <li><a href="#" class="c-anker-menu">オレンジ</a></li>
-                        <li><a href="#" class="c-anker-menu">アップル</a></li>
-                        <li><a href="#" class="c-anker-menu">紅茶（Ice/Hot）</a></li>
-                        <li><a href="#" class="c-anker-menu">コーヒー（Ice/Hot）</a></li>
-                    </ul>
-                </ul>
-            </nav>
-        </aside>
-        </div>
-        <footer class="l-footer">
-            <img src="./img/pc_footer.jpg" alt="フッター画像" class="l-footer-image">
-            <div class="l-footer-area">
-                <a href="#" class="l-footer-area-anker">ショップ情報</a>
-                <span class="l-footer-area-anker">｜</span>
-                <a href="#" class="l-footer-area-anker">ヒストリー</a>
-            </div>
-            <div class="l-footer-area2">
-                <p><small>Corpyright:RaiseTech</small></p>
-            </div>
-        </footer>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-        <script src="script/script.js"></script>
-    </body>
-</html>
+            <?php get_sidebar(); ?>
+
+            </div>
+        
+        <?php get_footer(); ?>

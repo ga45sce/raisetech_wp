@@ -22,6 +22,9 @@
             padding-top: 65px;
             padding-left: 67px;
         }
+        a {
+            color: inherit;
+        }
     }
     &__search {
         padding-top: 38px;
@@ -40,27 +43,39 @@
     &__search2::before {
         width: 15px;
         height: 15px;
-        top: 139px;
+        top: 186px;
         //left: 0;
         border: 1px solid;
         border-radius: 50%;
         //box-shadow: 0 0 0 2px #fff;
         margin-left: 10px;
+        @include mixin.media-queries(more-md2) {
+            top: 185px;
+        }
+        @include mixin.media-queries(more-md3) {
+            top: 173px;
+        }
         @include mixin.media-queries(more-lg) {
-            top: 100px;
+            top: 133px;
         }
 
     }
     &__search2::after {
         width: 8px;
         height: 6px;
-        top: 154px;
+        top: 200px;
         //left: 45px;
         border-top: solid 2px;
         transform: rotate(45deg);
         margin-left: 20px;
+        @include mixin.media-queries(more-md2) {
+            top: 200px;
+        }
+        @include mixin.media-queries(more-md3) {
+            top: 186px;
+        }
         @include mixin.media-queries(more-lg) {
-            top: 114px;
+            top: 147px;
         }
     }
     &__area2 {

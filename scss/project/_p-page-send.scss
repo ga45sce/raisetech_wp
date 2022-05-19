@@ -31,3 +31,16 @@
         flex-wrap: wrap;
     }
 }
+
+span.pages,
+a.previouspostslink,
+a.nextpostslink {
+    border:0px
+}
+
+span.pages,a.page,span.current,span.extend {
+    display: none;
+    @include mixin.media-queries(more-md) {
+        display: inline;
+    }
+}
