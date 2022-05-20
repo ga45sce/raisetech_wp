@@ -27,7 +27,7 @@
     function load_jquery() {
         if ( !is_admin() ) {
             wp_deregister_script('jquery');
-            wp_enqueue_script('jquery', 'http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.10.1');
+            wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js', array(), '1.10.1');
         }
     }
     add_action('wp_enqueue_scripts', 'load_jquery');
